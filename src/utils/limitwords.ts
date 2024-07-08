@@ -15,7 +15,7 @@ export function limitWords(input: string, maxWords: number): string {
         
         return words.slice(0, maxWords).join(' '); // Join the first maxWords words back into a string
     } catch (error) {
-        console.error(error?.message); // Log the error message to the console
+        console.error(error); // Log the error message to the console
         return ""; // Return an empty string if an error occurs
     }
 }
